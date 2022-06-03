@@ -38,6 +38,7 @@ public class Login extends HttpServlet {
 			     request.getRequestDispatcher("../jsp/success.jsp") .forward(request, response);
 			 }else {
 				 out.println("<p>IDもしくはパスワードが違います。</p>");
+				 out.println("<p>" + id + "</p>");
 				 request.setAttribute("ID", cb.getId());
 			 }
 
